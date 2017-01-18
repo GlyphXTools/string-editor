@@ -1,0 +1,488 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Resources\resource.en.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Resources\\resource.en.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_EDIT_FINDNEXT,       VIRTKEY, NOINVERT
+    VK_DOWN,        ID_EDIT_MOVESTRINGSDOWN, VIRTKEY, ALT, NOINVERT
+    VK_UP,          ID_EDIT_MOVESTRINGSUP,  VIRTKEY, ALT, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECTALL,      VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP_ABOUT,          VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_LANGUAGE_NEXT,       VIRTKEY, ALT, NOINVERT
+    VK_LEFT,        ID_LANGUAGE_PREVIOUS,   VIRTKEY, ALT, NOINVERT
+    VK_UP,          ID_EDIT_MOVEVALUESUP,   VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_DOWN,        ID_EDIT_MOVEVALUESDOWN, VIRTKEY, CONTROL, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VERSION_INFO DIALOGEX 0, 0, 302, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter version details"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Version details",IDC_STATIC,7,7,288,106
+    LTEXT           "Version:",IDC_STATIC,14,20,27,8
+    LTEXT           "VERSION",IDC_VERSION,47,20,30,8
+    LTEXT           "Author:",IDC_STATIC,14,34,26,8
+    COMBOBOX        IDC_COMBO1,46,32,241,75,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Notes:",IDC_STATIC,14,50,22,8
+    EDITTEXT        IDC_EDIT2,46,47,241,58,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "&Save",IDOK,97,118,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,155,118,50,14
+END
+
+IDD_NEWFILE DIALOGEX 0, 0, 185, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New file"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Please select the first language in the file",IDC_STATIC1,8,8,132,8
+    COMBOBOX        IDC_COMBO1,7,19,171,128,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Index type",IDC_STATIC,7,38,171,88
+    CONTROL         "Name",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,50,34,10
+    CONTROL         "Index",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,11,88,35,10
+    LTEXT           "Duplicate string names are not allowed and there is no string positioning. Use this when strings are accessed by name.",IDC_STATIC,23,59,148,25
+    LTEXT           "Duplicate string names are allowed and positioning is possible. Use this when strings are accessed by index.",IDC_STATIC,23,97,147,25
+    DEFPUSHBUTTON   "OK",IDOK,39,133,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,133,50,14
+END
+
+IDD_MAINDIALOG DIALOGEX 0, 0, 434, 312
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,6,6,204,181,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,211,6,204,181,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT1,44,198,189,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT2,44,214,189,60,ES_MULTILINE | ES_AUTOVSCROLL | WS_DISABLED | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,44,276,189,32,ES_MULTILINE | ES_AUTOVSCROLL | WS_DISABLED | WS_VSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_DISABLED | WS_BORDER | WS_TABSTOP,245,198,180,112,WS_EX_CLIENTEDGE
+    GROUPBOX        "Properties",IDC_GROUP1,3,188,235,123,0,WS_EX_TRANSPARENT
+    LTEXT           "Name:",IDC_STATIC2,8,201,22,8
+    LTEXT           "Value:",IDC_STATIC3,8,215,21,8
+    LTEXT           "Comment:",IDC_STATIC4,8,279,34,8
+    ICON            116,IDC_STATIC1,216,196,20,20,SS_CENTERIMAGE | SS_REALSIZEIMAGE | NOT WS_VISIBLE
+    GROUPBOX        "History",IDC_GROUP2,241,188,189,123,0,WS_EX_TRANSPARENT
+END
+
+IDD_LANG_SELECT DIALOGEX 0, 0, 185, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select language"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "TEXT",IDC_STATIC1,8,8,170,8
+    COMBOBOX        IDC_COMBO1,7,25,171,40,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,39,44,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,44,50,14
+END
+
+IDD_IMPORT_NAME DIALOGEX 0, 0, 207, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import .DAT file"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Please select the import method:",IDC_STATIC,7,7,193,99
+    CONTROL         "Union",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,11,19,34,10
+    CONTROL         "Intersection",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,11,58,55,10
+    CONTROL         "Difference",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,11,84,49,10
+    CONTROL         "Overwrite current strings with the same name",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,23,40,163,10
+    DEFPUSHBUTTON   "OK",IDOK,49,113,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,113,50,14
+    LTEXT           "Merge the strings in the file with the current version.",IDC_STATIC,23,29,174,9
+    LTEXT           "Current strings that are not in the file will be deleted.",IDC_STATIC,23,68,174,9
+    LTEXT           "Current strings that are also in the file will be deleted.",IDC_STATIC,23,94,174,9
+END
+
+IDD_IMPORT_INDEX DIALOGEX 0, 0, 207, 117
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import .DAT file"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Please select the import method:",-1,7,7,193,82
+    CONTROL         "Overwrite",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,11,19,48,10
+    CONTROL         "Append",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,11,58,41,10
+    DEFPUSHBUTTON   "OK",IDOK,49,96,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,96,50,14
+    LTEXT           "Overwrite the current strings from the start with the strings in the file. Gaps will be inserted in the file to properly match the names.",-1,23,29,174,26
+    LTEXT           "Append the strings in the file to the end of the current version.",-1,23,68,170,19
+END
+
+IDD_FIND DIALOGEX 0, 0, 220, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,45,7,166,14,ES_AUTOHSCROLL
+    GROUPBOX        "Find options",IDC_STATIC,7,24,102,68
+    CONTROL         "Match &case",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,35,52,10
+    CONTROL         "Match &whole word",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,46,74,10
+    CONTROL         "Search &Names",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,57,61,10
+    CONTROL         "Search &Values",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,68,61,10
+    CONTROL         "Search Co&mments",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,79,73,10
+    GROUPBOX        "Look in:",IDC_STATIC,111,46,102,46
+    CONTROL         "Entire &document",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,117,68,68,10
+    CONTROL         "&Selection",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,117,79,45,10
+    LTEXT           "Search for:",IDC_STATIC,7,9,37,8
+    DEFPUSHBUTTON   "&Find",IDC_BUTTON1,31,100,50,14
+    PUSHBUTTON      "Find &All",IDC_BUTTON2,84,100,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,137,100,50,14
+    CONTROL         "&Below cursor",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,117,58,57,10
+END
+
+IDD_FILE_INFO DIALOGEX 0, 0, 290, 311
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Details"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,13,74,265,76,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT1,63,190,214,51,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "&Close",IDCANCEL,119,290,50,14
+    GROUPBOX        "Version Details",IDC_STATIC,7,157,276,126
+    LTEXT           "Author:",IDC_STATIC,14,179,26,8
+    LTEXT           "Notes:",IDC_STATIC,14,190,22,8
+    LTEXT           "N/A",IDC_STATIC4,63,179,75,8
+    LTEXT           "#Differences:",IDC_STATIC,14,246,46,8
+    LTEXT           "Saved:",IDC_STATIC,14,169,24,8
+    LTEXT           "N/A",IDC_STATIC3,63,169,75,8
+    GROUPBOX        "Versions",IDC_STATIC,7,64,276,91
+    LTEXT           "#Strings:",IDC_STATIC,14,258,31,8
+    LTEXT           "N/A",IDC_STATIC5,63,246,75,8
+    LTEXT           "N/A",IDC_STATIC6,63,258,75,8
+    LTEXT           "#Languages:",IDC_STATIC,14,269,44,8
+    LTEXT           "N/A",IDC_STATIC7,63,269,75,8
+    GROUPBOX        "File",IDC_STATIC,7,7,276,56
+    LTEXT           "File Format:",IDC_STATIC,14,19,39,8
+    LTEXT           "Version 1.0",IDC_STATIC,58,19,37,8
+    LTEXT           "#Authors:",IDC_STATIC,14,39,34,8
+    LTEXT           "N/A",IDC_STATIC1,58,39,75,8
+    LTEXT           "#Versions:",IDC_STATIC,14,49,36,8
+    LTEXT           "N/A",IDC_STATIC2,58,49,75,8
+    LTEXT           "File Type:",IDC_STATIC,14,29,32,8
+    LTEXT           "N/A",IDC_STATIC8,58,29,75,8
+END
+
+IDD_EXPORT DIALOGEX 0, 0, 286, 214
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export .DAT files"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,48,7,177,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BUTTON1,230,7,49,14
+    CONTROL         "",IDC_EDITLIST1,"EditList",WS_VSCROLL | WS_GROUP | WS_TABSTOP,14,37,258,146,WS_EX_CONTROLPARENT
+    DEFPUSHBUTTON   "OK",IDOK,88,193,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,146,193,50,14
+    LTEXT           "Base name:",IDC_STATIC,7,9,38,8
+    GROUPBOX        "Language-specific postfixes",IDC_STATIC,7,25,272,162
+END
+
+IDD_EDITLISTENTRY DIALOGEX 0, 0, 186, 12
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,75,0,106,12,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC1,12,1,19,8
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,1,9,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open\tCtrl+O",               ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE, GRAYED
+        MENUITEM "Save &As",                    ID_FILE_SAVEAS, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Details",                    40064, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Import",                     ID_FILE_IMPORT, GRAYED
+        MENUITEM "&Export",                     ID_FILE_EXPORT, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Insert &String\tInsert",      ID_EDIT_ADDSTRING, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY, GRAYED
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT, GRAYED
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE, GRAYED
+        POPUP "Paste &Special", GRAYED
+        BEGIN
+            MENUITEM "&Union",                      ID_PASTESPECIAL_UNION
+            MENUITEM "&Intersection",               ID_PASTESPECIAL_INTERSECTION
+            MENUITEM "&Difference",                 ID_PASTESPECIAL_DIFFERENCE
+        END
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECTALL, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Find\tCtrl+F",               ID_EDIT_FIND, GRAYED
+        MENUITEM "Find &Next\tF3",              ID_EDIT_FINDNEXT, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Find Next &Invalid",          ID_EDIT_FINDNEXTINVALID, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Move Strings &Up\tAlt+Up",    ID_EDIT_MOVESTRINGSUP, GRAYED
+        MENUITEM "&Move Strings Down\tAlt+Down", ID_EDIT_MOVESTRINGSDOWN, GRAYED
+        MENUITEM "M&ove Values Up\tCtrl+Alt+Up", ID_EDIT_MOVEVALUESUP, GRAYED
+        MENUITEM "Move &Values Down\tCtrl+Alt+Down", ID_EDIT_MOVEVALUESDOWN, GRAYED
+    END
+    POPUP "&Language"
+    BEGIN
+        MENUITEM "&Add Language",               ID_LANGUAGE_ADD, GRAYED
+        MENUITEM "&Change Language",            ID_LANGUAGE_CHANGE, GRAYED
+        MENUITEM "&Delete Language",            ID_LANGUAGE_DELETE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Previous Language\tAlt+Left", ID_LANGUAGE_PREVIOUS, GRAYED
+        MENUITEM "&Next language\tAlt+Right",   ID_LANGUAGE_NEXT, GRAYED
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About\tF1",                  ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_VERSION_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_NEWFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_MAINDIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 430
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_LANG_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_IMPORT_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_IMPORT_INDEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_FIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_FILE_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_EXPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_FILE_READ     "Unable to read file"
+    IDS_ERROR_FILE_WRITE    "Unable to write file"
+    IDS_ERROR_FILE_FIND     "Unable to find file:\n%ls"
+    IDS_ERROR_FILE_CORRUPT  "Bad or corrupted file"
+    IDS_ERROR_FILE_VERSION  "Unsupported file version"
+    IDS_CURRENT_VERSION     "Current version"
+    IDS_NEW_STRING          "New string here..."
+    IDS_FILES_VDF           "Versioned DAT Files"
+    IDS_FILES_ALL           "All Files"
+    IDS_ERROR_FILE_OPEN     "Unable to open file"
+    IDS_ERROR_FILE_SAVE     "Unable to save file"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INFO_NO_CHANGES     "There are no changes since the last version."
+    IDS_TITLE_NO_CHANGES    "File not saved"
+    IDS_FILES_DAT           "DAT Files"
+    IDS_ERROR_FILE_IMPORT   "Unable to import file"
+    IDS_ERROR_INVALID_NAMES "This file contains invalid names. Please fix them before exporting."
+    IDS_ERROR_FILE_EXPORT   "Unable to export file:\n%ls"
+    IDS_INFO_EXPORT_COMPLETE "Exporting completed"
+    IDS_INFORMATION         "Information"
+    IDS_QUERY_SAVE_CHANGES  "Do you want to save the changes to your document?"
+    IDS_TITLE_SAVE_CHANGES  "Save file?"
+    IDS_CONFIRM_LANGUAGE_DELETE 
+                            "Are you sure you want to delete this language?\nThis operation cannot be undone"
+    IDS_CONFIRM             "Confirm"
+    IDS_ERROR_TEXT_NOT_FOUND "The specified text was not found"
+    IDS_COLUMN_NAME         "Name"
+    IDS_COLUMN_VALUE        "Value"
+    IDS_COLUMN_COMMENT      "Comment"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COLUMN_DATE         "Date"
+    IDS_COLUMN_LAST_MODIFIED "Last modified"
+    IDS_LABEL_VERSION       "Version"
+    IDS_LABEL_LANGUAGE      "Language"
+    IDS_ERROR_UI_INITIALIZATION "Unable to initialize UI"
+    IDS_TOOLTIP_NEW         "New file"
+    IDS_TOOLTIP_OPEN        "Open file"
+    IDS_TOOLTIP_SAVE        "Save file"
+    IDS_TOOLTIP_FIND        "Find"
+    IDS_TOOLTIP_CUT         "Cut"
+    IDS_TOOLTIP_COPY        "Copy"
+    IDS_TOOLTIP_PASTE       "Paste"
+    IDS_TOOLTIP_MOVEUP      "Move strings up"
+    IDS_TOOLTIP_MOVEDOWN    "Move strings down"
+    IDS_TOOLTIP_FINDNEXTINVALID "Find next invalid"
+    IDS_LANGUAGE_ADD        "Please the select the language to add:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LANGUAGE_CHANGE     "Please the select the new language:"
+    IDS_ERROR_EXPORT_POSTFIX "Please make sure each postfix is unique."
+    IDS_ERROR_EXPORT_SELECT "Please select one or more languages to export."
+    IDS_FILEINFO_COLUMN_SAVED "Saved"
+    IDS_FILEINFO_COLUMN_AUTHOR "Author"
+    IDS_FILEINFO_COLUMN_NOTES "Notes"
+    IDS_FILEINFO_NAME_INDEXED "Name-indexed"
+    IDS_FILEINFO_INDEX_INDEXED "Index-indexed"
+    IDS_ERROR_WINDOW_CREATE "Unable to create window"
+    IDS_ERROR_FILE_CREATE   "Unable to create file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
