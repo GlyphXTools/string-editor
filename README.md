@@ -1,4 +1,4 @@
 # string-editor
-[![Build status](https://ci.appveyor.com/api/projects/status/j5c5nfww82n6lo80/branch/master?svg=true)](https://ci.appveyor.com/project/MikeLankamp/string-editor/branch/master)
+[![build](https://github.com/GlyphXTools/string-editor/actions/workflows/build.yml/badge.svg)](https://github.com/GlyphXTools/string-editor/actions/workflows/build.yml?query=branch%3Amaster)
 
 Smart string editor with history and multi-language support for GlyphX's string files
